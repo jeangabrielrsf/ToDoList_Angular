@@ -1,0 +1,15 @@
+.listEmpty {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.list {
+  border: 1px solid black;
+  margin: 10px auto;
+}

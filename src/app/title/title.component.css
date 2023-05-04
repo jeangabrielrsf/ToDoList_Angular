@@ -1,0 +1,17 @@
+div {
+  background-color: #af7eeb;
+  width: 25%;
+  height: 50px;
+  margin: 10px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+}
