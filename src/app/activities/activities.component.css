@@ -6,10 +6,17 @@
   background-color: #fff;
   border-radius: 8px;
   width: 25%;
+  height: 300px;
   margin: 0 auto;
 }
 
 .list {
   border: 1px solid black;
-  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 25%;
+  min-height: 300px;
+  margin: 0 auto;
 }

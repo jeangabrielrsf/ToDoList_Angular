@@ -1,3 +1,4 @@
 <app-title></app-title>
-<app-activities></app-activities>
+<app-activities [activitiesList]="list"></app-activities>
+<app-input (sendActivity)="setActivity($event)"></app-input>
 <router-outlet> </router-outlet>

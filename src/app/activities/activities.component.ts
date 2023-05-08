@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-activities',
   template: `
     <div
       class="activities"
-      *ngIf="activitiesList.length > 0; then thenBlock; else elseBlock"
+      *ngIf="activitiesList.length != 0; then thenBlock; else elseBlock"
     ></div>
     <ng-template #thenBlock>
       <div class="list">
@@ -26,5 +26,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./activities.component.css'],
 })
 export class ActivitiesComponent {
-  public activitiesList: Array<{ name: string; isDone: boolean }> = [];
+  @Input() public activitiesList: Array<{ name: string; isDone: boolean }>;
+
+  constructor() {
+    this.activitiesList = [];
+  }
 }
